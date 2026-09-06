@@ -1,0 +1,110 @@
+/*
+ * Design tokens.
+ *
+ * Light is defined on the bare :root, dark overrides only the values. The two
+ * blocks below cover both ways a user can be in dark mode: their operating
+ * system setting, and an explicit choice made with the toggle in the header.
+ */
+
+:root {
+  --ground: #f4f4f1;
+  --surface: #ffffff;
+  --surface-2: #ebebe7;
+  --ink: #191c1e;
+  --ink-2: #4a5054;
+  --ink-3: #787f83;
+  --rule: #d8dad5;
+  --accent: #0e6f79;
+  --accent-ink: #ffffff;
+  --accent-soft: #daecee;
+  --ok: #2f6b45;
+  --ok-soft: #ddede2;
+  --warn: #8a5a12;
+  --warn-soft: #f6ebd6;
+  --fail: #a32f3a;
+  --fail-soft: #f7e0e2;
+
+  --radius: 6px;
+  --gap: 16px;
+
+  --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --ground: #121517;
+    --surface: #1a1e21;
+    --surface-2: #232829;
+    --ink: #e9ebe7;
+    --ink-2: #a9b0b3;
+    --ink-3: #7c8387;
+    --rule: #2c3236;
+    --accent: #4fc2cc;
+    --accent-ink: #0b2225;
+    --accent-soft: #0e3438;
+    --ok: #6fbf8e;
+    --ok-soft: #173325;
+    --warn: #d9a441;
+    --warn-soft: #332810;
+    --fail: #e4818b;
+    --fail-soft: #35181c;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --ground: #121517;
+  --surface: #1a1e21;
+  --surface-2: #232829;
+  --ink: #e9ebe7;
+  --ink-2: #a9b0b3;
+  --ink-3: #7c8387;
+  --rule: #2c3236;
+  --accent: #4fc2cc;
+  --accent-ink: #0b2225;
+  --accent-soft: #0e3438;
+  --ok: #6fbf8e;
+  --ok-soft: #173325;
+  --warn: #d9a441;
+  --warn-soft: #332810;
+  --fail: #e4818b;
+  --fail-soft: #35181c;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Free Passport &amp; Visa Photo Maker, No Upload | PhotoSpec</title>
+    <meta
+      name="description"
+      content="Free tool to make a compliant passport or visa photo from a phone picture. Correct head height, plain background and a print-ready sheet, all in your browser, with no upload."
+    />
+    <meta name="theme-color" content="#0e6f79" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PhotoSpec" />
+    <meta property="og:title" content="Free Passport &amp; Visa Photo Maker, No Upload" />
+    <meta
+      property="og:description"
+      content="Make a compliant passport or visa photo from a phone picture. Schengen, UK, US, India and custom sizes, with a printable sheet. Your photo never leaves your device."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Free Passport &amp; Visa Photo Maker, No Upload" />
+    <meta
+      name="twitter:description"
+      content="Correct head height, plain background, print-ready sheet. Runs entirely in your browser."
+    />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%230E6F79'/><rect x='9' y='6' width='14' height='18' rx='2' fill='white'/><circle cx='16' cy='13' r='4' fill='%230E6F79'/><path d='M9 24c1.6-3.4 4-5 7-5s5.4 1.6 7 5z' fill='%230E6F79'/></svg>" />
+    <!-- The models are fetched from these origins the moment a photo is chosen. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin />
+  </head>
+  <body>
+    <div id="root">
+      <!--
+        Rendered before JavaScript loads, and replaced by React once it does.
+        Anything that cannot run JavaScript (some crawlers, a failed bundle, a
+        very slow connection) still gets a usable page rather than a blank one.
+      -->
+      <noscript>
+        <div style="max-width: 640px; margin: 40px auto; padding: 0 20px; font-family: system-ui, sans-serif; line-height: 1.6">
+          <h1>PhotoSpec: passport and visa photo maker</h1>
+          <p>
+            PhotoSpec turns a phone photo into a compliant passport or visa photo: the
+            right size, the right head height, a plain background and a printable sheet.
+            All the work happens inside your browser, so your photo is never uploaded.
+          </p>
+          <p><strong>JavaScript is required</strong> to process photos, because the processing runs on your own device rather than on a server.</p>
+          <p>Requirements by document:</p>
+          <ul>
+            <li><a href="./schengen-visa-photo/">Schengen visa photo (35 × 45 mm)</a></li>
+            <li><a href="./uk-passport-photo/">UK passport photo (35 × 45 mm)</a></li>
+            <li><a href="./us-passport-photo/">US passport photo (51 × 51 mm)</a></li>
+            <li><a href="./india-passport-photo/">India passport photo (35 × 45 mm)</a></li>
+            <li><a href="./canada-passport-photo/">Canada passport photo (50 × 70 mm)</a></li>
+          </ul>
+        </div>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
