@@ -25,7 +25,7 @@ export const SITE = {
   description:
     'Free tool to make a compliant passport or visa photo from a phone picture. Correct head height, plain background and a print-ready sheet, all in your browser, with no upload.',
   author: 'Vishal Parekh',
-  repository: 'https://github.com/vishalparekh/photospec',
+  repository: 'https://github.com/iamvishalparekh/photospec',
 } as const
 
 /** Questions people actually search for, answered honestly. */

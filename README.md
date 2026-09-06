@@ -7,7 +7,7 @@
 Turn a phone picture into a correctly sized, compliant ID photo, and a
 print-ready sheet of them, without the image ever leaving your browser.
 
-[Live app](https://vishalparekh.github.io/photospec/) ·
+[Live app](https://iamvishalparekh.github.io/photospec/) ·
 [How it works](docs/how-the-models-work.md) ·
 [Architecture](docs/ARCHITECTURE.md) ·
 [Contributing](CONTRIBUTING.md)
@@ -113,7 +113,7 @@ request, not a requirement.
 Requires Node 20 or newer.
 
 ```bash
-git clone https://github.com/<your-username>/photospec.git
+git clone https://github.com/iamvishalparekh/photospec.git
 cd photospec
 npm install
 npm run dev
